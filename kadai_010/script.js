@@ -67,6 +67,9 @@ $(function(){
     $('#tel').blur(function (){
         inputCheck();
     });
+    $('#prefecture').blur(function(){
+        inputCheck();
+    });
     $('#message').blur(function () {
         inputCheck();
     });
@@ -143,7 +146,7 @@ $(function(){
         }
 
         //都道府県のチェック
-        if($('#prefecture').prop() == false) {
+        if($('#prefecture').val() == false) {
             //エラーあり
             error = true;
             message += '都道府県を選択してください。\n';
